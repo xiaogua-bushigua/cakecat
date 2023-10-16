@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'mr';
+	src: url(./fonts/zaozigongfangfangyuanti.ttf);
+}
+
+.page {
+	height: 100vh;
+  width: 100vw;
+	background: linear-gradient(to left, #fffcdc, #ecc0dc);
+  display: flex;
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    ul {
+      list-style: none;
+      li {
+        margin: 24px 0;
+        font-size: 30px;
+        user-select: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .right {
+    flex: 1.5;
+  }
+}
+
+.modelTitle {
+  font-family: "mr";
+  margin: 0 24px;
+  font-size: 28px;
+  color: #ffffff;
+  transition: 0.3s;
+  user-select: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.modelTitle:hover {
+  color: #eefffd;
+  text-shadow: 0 0 4px #fff;
+}

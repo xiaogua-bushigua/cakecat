@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'mr';
+	src: url(./fonts/zaozigongfangfangyuanti.ttf);
+}
+
+.naviWrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 6px 100px;
+	// background: -webkit-linear-gradient(to bottom, #fffcdc, #ecc0dc); /* Chrome 10-25, Safari 5.1-6 */
+	// background: linear-gradient(to bottom, #fffcdc, #ecc0dc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.left {
+	ul {
+		display: flex;
+		list-style: none;
+		align-items: center;
+		img {
+			height: 46px;
+			margin-right: 12px;
+		}
+		li {
+      font-family: "mr";
+			margin: 0 24px;
+			font-size: 28px;
+			color: #ffffff;
+      transition: 0.3s;
+      user-select: none;
+			letter-spacing: 2px;
+			cursor: pointer;
+		}
+    li:hover {
+      color: #eefffd;
+      text-shadow: 0 0 4px #fff;
+    }
+	}
+}
+
+.right {
+	display: flex;
+	align-items: center;
+	img {
+		height: 30px;
+		cursor: pointer;
+	}
+	input {
+		margin-right: 24px;
+		height: 28px;
+		width: 150px;
+		line-height: 28px;
+		padding: 4px 6px;
+		outline: none;
+		border: none;
+		border-radius: 6px;
+		font-size: 17px;
+		color: #2b8675;
+		opacity: 0;
+		transition: 0.3s;
+		transform-origin: 50% 50%;
+		transform: scale(0);
+	}
+	input[type='text']:focus {
+		outline: 1px solid #cef1eb;
+	}
+	.actived {
+		opacity: 1;
+		transform: scale(1);
+		transition: 0.3s;
+	}
+	.cube {
+		cursor: pointer;
+		font-family: 'Roboto', sans-serif;
+		transition: all 0.85s cubic-bezier(0.17, 0.67, 0.14, 0.93);
+		transform-style: preserve-3d;
+		transform-origin: 100% 50%;
+		width: 80px;
+		height: 40px;
+		margin-left: 24px;
+		.side {
+			box-sizing: border-box;
+			position: absolute;
+			display: inline-block;
+			width: 80px;
+			height: 40px;
+			text-align: center;
+			text-transform: uppercase;
+			line-height: 40px;
+			font-weight: bold;
+			border-radius: 8px;
+      user-select: none;
+		}
+		.top {
+			background: wheat;
+			color: #f67cc5;
+			transform: rotateX(90deg) translate3d(0, 0, 2em);
+		}
+
+		.front {
+			background: #f67cc5;
+			color: #fff;
+			transform: translate3d(0, 0, 2em);
+		}
+	}
+	.cube:hover {
+		transform: rotateX(-90deg);
+	}
+}
